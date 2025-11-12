@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090212;
+  --foreground: #0b0715;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  background:
+      radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.55), transparent 25%),
+      radial-gradient(circle at 85% 18%, rgba(129, 140, 248, 0.35), transparent 35%),
+      radial-gradient(circle at 35% 90%, rgba(236, 72, 153, 0.25), transparent 45%),
+      var(--background);
+  color: #0f172a;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero-grid {
+  background: linear-gradient(140deg, rgba(15, 23, 42, 0.96), rgba(30, 64, 175, 0.7));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.08),
+    0 20px 80px -30px rgba(59, 130, 246, 0.5);
+}
+
+.glass-panel {
+  background: linear-gradient(
+    145deg,
+    rgba(248, 250, 252, 0.92),
+    rgba(241, 245, 249, 0.75)
+  );
+  box-shadow: 0 20px 60px -35px rgba(15, 23, 42, 0.65);
+}
+
+.glass-panel-dark {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.92),
+    rgba(15, 23, 42, 0.6)
+  );
+  box-shadow: 0 32px 80px -55px rgba(15, 23, 42, 0.9);
+}
